@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" manifest="indexapp.cache">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Image Converter</title>
+        <link rel="icon" href="src/icon.jpg" />
+        <link rel="stylesheet" href="./index.css" />
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="./pop-up_output_window.js" async></script>
+        <script src="./index.js" async></script>
+        <script src="static/img_convert.js" async></script>
+        <script src="static/preview.js" async></script>
+    </head>
+    <body>
+        <main class="image-converter" id="convertion">
+            <div class="header">
+                <h1 class="title">Image Converter</h1>
+                <div class="tabs">
+                    <ul>
+                        <li><a href="" class="tabs-to">About</a></li>
+                        <div class="spread"></div>
+                        <li><a href="" class="tabs-to">Github</a></li>
+                        <div class="spread"></div>
+                    </ul>
+                </div>
+            </div>
+            <form method="POST" action="">
+            <section class="conversion-set">
+                <input class="select-img" id="sel" type="file" />
+                <h3 class="refer">to</h3>
+                <select class="choose-conversion">
+                    <option>JPG</option>
+                    <option>PNG</option>
+                    <option>ICO</option>
+                    <option>TIFF</option>
+                    <option>SVG</option>
+                    <option>PDF</option>
+                    <option>PSD</option>
+                    <option>AI</option>
+                    <option>BMP</option>
+                    <option>BMP ICO</option>
+                    <option>INDD</option>
+                    <option>EPS</option>
+                    <option>RAW</option>
+                    <option>APNG</option>
+                </select>
+                </div>
+            </section>
+            <section class="select-dimension">
+                <div class="six-x-six-dimensions">
+                    <h4>600 x 600</h4>
+                    <input class="six" type="checkbox" />
+                    </div>
+                    <div class="5-x-5-dimensions">
+                        <h4>500 x 500</h4>
+                        <input class="five" type="checkbox" />
+                        </div>
+                        <div class="4-x-4-dimensions">
+                            <h4>400 x 400</h4>
+                            <input class="four" type="checkbox" />
+                            </div>
+                            <div class="3-x-3-dimensions">
+                                <h4>300 x 300</h4>
+                                <input class="three" type="checkbox" />
+                                </div>
+                                    <div class="2-x-2-dimensions">
+                                    <h4>200 x 200</h4>
+                                    <input class="two" type="checkbox" />
+                                    </div>
+                                    <div class="1-x-1-dimensions">
+                                        <h4>100 x 100</h4>
+                                        <input class="one" type="checkbox" />
+                                        </div>
+            </section>
+            <div class="button-s">
+                <button class="button-to-submit">Convert</button>
+            </div>
+            <div class="previewed">
+                <img class="preview-upload" src="src/sample_preview.png" />
+            </div>
+        </form>
+        </main>
+    </body>
+</html>

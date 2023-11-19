@@ -1,0 +1,6 @@
+Flask-CORS
+argparse
+Flask-WTF
+WTForms
+secrets
+Flask-SocketIO

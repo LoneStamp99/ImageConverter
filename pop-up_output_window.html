@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" manifest="indexapp.cache">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Image Converter</title>
+        <link rel="icon" href="src/icon.jpg" />
+        <link rel="stylesheet" href="./index.css" />
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="./pop-up_output_window.js" async></script>
+        <script src="./index.js" async></script>
+        <script src="static/img_convert.js" async></script>
+        <script src="static/preview.js" async></script>
+    </head>
+    <body>
+      <main>
+        <img class="pop-up_output_window" alt="Preview" src="" />
+        </main>
+        <style>
+        html {
+          width: 1000px;
+          height: 900px;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+        }
+        .pop-up_output_window {
+          width: 700px;
+          height: 700px;
+        }
+        </style>
+    </body>
+</html>
